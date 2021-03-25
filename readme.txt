@@ -1,0 +1,1 @@
+this is a calculator project with all the functionalities of a basic calculator.
