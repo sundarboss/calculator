@@ -1,0 +1,94 @@
+#clear { grid-area: clear; }
+#divide { grid-area: divide; }
+#multiply { grid-area: multi; }
+#add { grid-area: ad; }
+#subtract { grid-area: subtrac; }
+#one { grid-area: one; }
+#two { grid-area: two; }
+#three { grid-area: three; }
+#four { grid-area: four; }
+#five { grid-area: five; }
+#six { grid-area: six; }
+#seven { grid-area: seven; }
+#eight { grid-area: eight; }
+#nine { grid-area: nine; }
+#zero { grid-area: zer; }
+#decimal { grid-area: decima; }
+#equals { grid-area: equals; }
+
+
+#container {
+    width: 25%;
+    height: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    border-radius: 3px;
+    transform: translate(-50%, -50%);
+    background-color: black;
+    padding: 5px;
+    display: inline-block;
+}
+
+
+#formula {
+    width: 100%;
+    min-height: 40px;
+    max-height: auto;
+    text-align: right;
+    font-size: 30px;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    word-break: break-all;
+    font-family: 'Abhaya Libre', monospace;
+    color: white
+}
+
+#display {
+    width: 100%;
+    height: 50px;
+    text-align: right;
+    font-size: 40px;
+    font-family: 'Abhaya Libre', monospace;
+    color: white;
+}
+
+#button-container {
+    width: 100%;
+    height: 500px;
+    display: grid;
+    font-family: 'Josefin Slab', monospace;
+    grid-template-areas: 
+        'clear clear divide multi'
+        'seven eight nine subtrac'
+        'four five six ad'
+        'one two three equals'
+        'zer zer decima equals';
+    grid-gap: 2px;
+    background-color: black;
+}
+
+.number {
+    background-color: rgb(74, 77, 75);
+    border: 1px solid rgb(74, 77, 75);
+    color: white;
+    font-size: 25px;
+    font-family: 'Josefin Slab', monospace;
+}
+
+.operator, #equals {
+    background-color: rgb(237, 157, 9);
+    border: 1px solid rgb(237, 157, 9);
+    color: white;
+    font-size: 25px;
+    font-family: 'Josefin Slab', monospace;
+}
+
+#clear {
+    background-color: rgb(235, 74, 68);
+    border: 1px solid rgb(235, 74, 68);
+    color: white;
+    font-size: 25px;
+    font-family: 'Josefin Slab', monospace;
+}
+
